@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style">
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+
+    <link rel="stylesheet" href="style">
+    <link rel="stylesheet" href="Estilos/normalize.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>Elementos del pensamiento</h1>
+    </div>
+    
+    <div class="main">
+
+
+        <div class="box">
+            <button class="openModalBtn">
+                punto de vista
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>La perspectiva desde la cual se observa o se analiza un asunto, influenciada por la experiencia, valores o creencias de una persona.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                Proposito del pensamiento
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>El objetivo o intención detrás de un proceso de pensamiento, como comprender, analizar, persuadir o resolver un problema.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                pregunta en cuestión
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>La interrogante central o el problema que se busca resolver mediante el razonamiento o el análisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                información
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Los datos, hechos o detalles que se utilizan para construir una comprensión sobre un tema.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                interpretación e inferencia
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>La interpretación es el proceso de dar sentido a la información, mientras que la inferencia es la conclusión que se extrae de esos datos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                conceptos
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Las ideas o categorías abstractas que nos permiten organizar y entender el mundo, como "justicia", "libertad", "amor", etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                supuestos
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Las creencias o ideas que damos por sentadas sin cuestionar, que sirven como base para el razonamiento.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                implicaciones y consecuencias
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Las posibles repercusiones o efectos que se derivan de una acción, idea o decisión.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button class="openModalBtn">
+                AUTOR
+            </button>
+
+            <!-- Contenedor de la ventana emergente -->
+            <div class="modal">
+                <!-- Contenido de la ventana -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img class="foto" src="img/foto_yo.jpg" alt="">
+                    <div>
+                        <p>NOMBRE: Fabián Rodriguéz Angeles</p>
+                        <p>TEL: 4428248878</p>
+                        <P>CORREO: fabian.roddriguez021103@gmail.com</P>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <a  href="index.html">
+            <svg class="back" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 14l-4 -4l4 -4" />
+            <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+            </svg>
+        </a>
+
+    </div>
+
+
+    <script type="text/javascript">
+        // Obtén todos los botones y modales
+        var modals = document.querySelectorAll(".modal");
+        var openModalBtns = document.querySelectorAll(".openModalBtn");
+        var closeBtns = document.querySelectorAll(".close");
+
+        // Asigna un evento a cada botón para abrir su ventana modal correspondiente
+        openModalBtns.forEach(function(btn, index) {
+            btn.onclick = function() {
+                modals[index].style.display = "block"; // Muestra la ventana correspondiente
+            };
+        });
+
+        // Asigna un evento a cada botón de cerrar (span)
+        closeBtns.forEach(function(span, index) {
+            span.onclick = function() {
+                modals[index].style.display = "none"; // Cierra la ventana correspondiente
+            };
+        });
+
+        // Cerrar la ventana modal si el usuario hace clic fuera de ella
+        window.onclick = function(event) {
+            modals.forEach(function(modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

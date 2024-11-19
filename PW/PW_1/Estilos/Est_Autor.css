@@ -1,0 +1,100 @@
+:root{
+    --rojo: #ff6961;
+    --verde: #77dd77;
+    --Amarillo: #fdfd96;
+    --Azul: #84b6f4;
+    --Rosa: #fdcae1;
+    --fondo: #424141;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    --gris: #b6b2b2;
+}
+
+html{
+    font-size: 1rem;
+    background: var(--fondo);
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor_1{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 10rem;
+    height: 10rem;
+    margin: 0rem;
+}
+
+.txt1{
+    background-color: var(--Azul);
+    margin: 4rem 10px;
+    /*padding-right: 2rem;
+    padding-left: 2rem;*/
+    padding: 5px 57px;
+    border-radius: 3rem;
+    color: var(--blanco);
+    font-size: 40px;
+}
+
+.txt1{
+-webkit-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+.cuerpo{
+    background-color: var(--gris);
+    margin: 15px 25px;
+    border-radius: 3rem;
+}
+
+.cuerpo, .foto img, .back svg {
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+}
+    
+/*------------------------------------------------------------------*/
+
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+.foto img{
+    width: 8rem;
+    height: 14rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+/*------------------------------------------------------------------*/
+
+.text{
+    margin-left: 2rem;
+    
+}
+
+.text p{
+    color: var(--fondo);
+    padding: 5px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+.back svg{
+    background-color: var(--rojo);
+    margin: 1rem ;
+    border-radius: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}

@@ -1,0 +1,66 @@
+:root{
+    --fondo: #ffffff;
+    --Azul_1: #131e46;
+    --Azul_2: #3c4c8f;
+    --Azul_3: #063254;
+}
+
+html{
+    font-size: 1rem;
+    background: var(--fondo);
+    font-family: Arial;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50rem;
+    height: 50rem;
+    margin-top: 4.5rem;
+    margin-left: 5rem;
+}
+
+.box2{
+    background-color: var(--Azul_1);
+    /*padding:25rem 25rem 26.7rem 10rem;*/
+    padding-top: 25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 23.35rem;
+    margin-right: 7rem;
+
+}
+
+/*/////////////////////////////////////////////////////*/
+
+.bx_title{
+    background-color: var(--Azul_2);
+    padding: 1px 25px;
+    border-radius: 5rem;
+    margin-top: -21rem;
+
+    -webkit-box-shadow: 7px 6px 5px -4px rgba(255,255,255,1);
+    -moz-box-shadow: 7px 6px 5px -4px rgba(255,255,255,1);
+    box-shadow: 7px 6px 5px -4px rgba(255,255,255,1);
+}
+
+.title{
+    color: var(--fondo);
+    font-size: 3rem;
+}
+
+.link{
+    color:var(--fondo);
+    font-size: 3rem;
+    background-color: var(--Azul_3);
+    padding: 1rem 6rem;
+    border-radius: 1.5rem;
+}
+
+.bx_link{
+    margin-top: 20rem;
+    margin-left: 7.5rem;
+}
